@@ -49,9 +49,8 @@ def resizer(im_pth,output_path,desired_size=32,color = [0,0,0],rename = True):
         im = cv2.imread(im_pth)
         old_size = im.shape[:2]
     except:
-
-        continue
-
+        print("invalid image path")
+        return -1
     # old_size is in (height, width) format
 
     ratio = float(desired_size)/max(old_size)
