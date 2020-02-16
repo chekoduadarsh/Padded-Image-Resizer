@@ -2,7 +2,7 @@ import cv2
 import os
 import glob
 
-def bulk_resize(input_path,output_path,desired_size=32,color = [0,0,0],rename = True):
+def bulk_resizer(input_path,output_path,desired_size=32,color = [0,0,0],rename = True):
     img_no = 0
     #   onlyfiles = [f for f in os.listdir(input_path) if os.path.isfile(os.path.join(input_path, f))]
 
